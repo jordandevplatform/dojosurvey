@@ -1,0 +1,28 @@
+.row, .comment{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    height: 80px;
+    width: 800px;
+    background-color: darkblue;
+    color:white;
+    margin-left: 410px;
+}
+body{
+    border: solid 1px black;
+}
+textarea{
+    margin-top: 30px;
+}
+label{
+    margin: 5px;
+}
+#textarea{
+    margin-left: -310px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}

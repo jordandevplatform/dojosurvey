@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog</title>
+</head>
+<body>
+    {% csrf_token %}
+    <h1>{{dog_name}}</h1>
+    <h2>Woof! Your name is {{dog_name}}! You have great genitics from your {{breed}} genes! You are a good {{dog_name}}! Your {{trick}} is so adorable!</h2>
+    <h3>{{dog_name}} you are so weird! Why do you {{comment}}?</h3>
+</body>
+</html>

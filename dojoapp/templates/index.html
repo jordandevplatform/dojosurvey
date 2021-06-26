@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styled.css' %}" 
+</head>
+
+<body>
+    <form action="/result" method="POST">
+        {% csrf_token %}
+        <h1>Take this dog survey!</h1>
+
+        <div class="row">
+            <label for="dog_name" class="form-label">What's your Dog's name?</label>
+            <input type="text" class="form-control" name="dog_name">
+        </div>
+
+        <div class="row">
+            <label for="dog_breed" class="form-label">What's your Dog's breed?</label>
+            <input type="text" class="form-control" name="dog_breed">
+        </div>
+
+        <div class="row">
+            <label for="dog_tricks" class="form-label">What's your Dog's best trick?</label>
+            <input type="text" class="form-control" name="dog_tricks">
+        </div>
+
+        <div class="comment">
+            <label for="comment" class="textarea-label">Comment your dogs weirdest trait.</label>
+            <textarea id="textarea" name="comment" rows="3" cols="50">
+            </textarea>
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+</body>
+
+</html>
